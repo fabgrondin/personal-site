@@ -1,0 +1,15 @@
+nav {
+  width: 40px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  
+}
