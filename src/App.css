@@ -2,3 +2,8 @@
   --cyan: #79CBC8;
   --orange: #FF7900;
 }
+
+.main {
+  margin-left: 50px;
+  padding: 2em;
+}

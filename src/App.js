@@ -5,17 +5,14 @@ import {
   Link
 } from 'react-router-dom'
 
-import ToggleMenu from './ToggleMenu.js'
+import ToggleMenu from './ToggleMenu'
+import Resume from './Resume'
 
 import logo from './logo.svg';
 import './App.css';
 
 const Welcome = () => (
   <h1>Bienvenue</h1>
-)
-
-const Resume = () => (
-  <h1>Mon CV</h1>
 )
 
 const Portfolio = () => (
@@ -28,10 +25,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <ToggleMenu />
-
-          <Route exact path="/" component={Welcome} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/portfolio" component={Portfolio} />
+          <div className="main">
+            <Route exact path="/" component={Welcome} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/portfolio" component={Portfolio} />
+          </div>
         </div>
       </Router>
     );
