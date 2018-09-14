@@ -25,54 +25,54 @@ const Resume = () => (
           <h3>Compétences</h3>
           <div id="skills_wrapper">
             <div>
-              <p class="skill">
+              <p className="skill">
                 HTML
                 <br/>
                 <span>●●●●○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 JavaScript
                 <br/>
                 <span>●●●○○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 MySQL
                 <br/>
                 <span>●●○○○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 WordPress
                 <br/>
                 <span>●●●○○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 Laravel
                 <br/>
                 <span>●●●○○</span>
               </p>
             </div>
             <div>
-              <p class="skill">
+              <p className="skill">
                 CSS
                 <br/>
                 <span>●●●●○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 PHP
                 <br/>
                 <span>●●●○○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 React
                 <br/>
                 <span>●●○○○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 Bootstrap
                 <br/>
                 <span>●●●●○</span>
               </p>
-              <p class="skill">
+              <p className="skill">
                 Anglais
                 <br/>
                 <span>●●●○○</span>
