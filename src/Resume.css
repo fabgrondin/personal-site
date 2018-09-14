@@ -1,27 +1,39 @@
-aside {
+#resume {
+  max-width: 1200px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#presentation,#profil_wrapper {
+  padding: 2em;
+}
+
+#presentation {
   width: 300px;
   padding-top: 80px;
 }
 
-#profil {
-  width: 200px;
-  margin: 0 50px;
-  clip-path: circle(100px at 50% 40%);
+#presentation > img {
+  width: 250px;
+  margin: 0 25px;
+  clip-path: circle(125px at 50% 40%);
 }
 
-aside > h1 {
+#presentation > h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   font-weight: normal;
   color: var(--cyan);
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.4em;
   line-height: 1.4em;
   margin-top: -1em;
   margin-bottom: 0;
 }
 
-aside > h2 {
+#presentation > h2 {
   font-family: 'Lato', sans-serif;
   font-size: 1.1em;
   font-weight: normal;
@@ -30,19 +42,23 @@ aside > h2 {
   margin-top: 1em;
 }
 
-aside > section {
+#presentation section {
+  width: 300px;
   margin-top: 2em;
 }
 
-aside > section > h3 {
+#presentation section h3,#profil_wrapper section h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 1.1em;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  background-color: var(--cyan);
   padding: 0.7em;
   margin: 0;
+}
+
+#presentation section h3 {
+  background-color: var(--cyan);
 }
 
 #contact p {
@@ -63,4 +79,39 @@ aside > section > h3 {
 
 .skill > span {
   color: var(--orange);
+}
+
+#profil_wrapper {
+  min-width: 400px;
+  flex: 1 1;
+  background-color: var(--cyan);
+}
+
+#profil_wrapper > section > h3 {
+  background-color: #fff;
+}
+
+#profil > p, #hobbies > p {
+  margin: 0;
+  padding: 1em;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+#profil_wrapper > section > div{
+  padding: 1em;
+  letter-spacing: 0.1em;
+}
+
+#profil_wrapper > section > div > h4 {
+  margin: 0 0 0.2em;
+  text-transform: uppercase;
+}
+
+#profil_wrapper > section > div > p {
+  margin: 0 0 1em;
+}
+
+.upper_text {
+  text-transform: uppercase;
 }
