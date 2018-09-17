@@ -10,15 +10,10 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import ToggleMenu from './ToggleMenu'
 import Resume from './Resume'
 import Welcome from './Welcome'
+import Portfolio from './Portfolio'
 
 import logo from './logo.svg';
 import './App.css';
-
-const Portfolio = () => (
-  <div>
-    <h1>Mon portfolio</h1>
-  </div>
-)
 
 class App extends Component {
   render() {
