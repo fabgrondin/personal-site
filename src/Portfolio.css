@@ -1,3 +1,8 @@
 #portfolio {
   width: 100%;
 }
+
+#portfolio.fade-enter {
+  width: calc(100% - 4em);
+  height: calc(80%)
+}

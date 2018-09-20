@@ -19,14 +19,21 @@
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 750ms ease-in;
+  transition: opacity 1000ms ease-in;
 }
 
 .fade-enter-done {
   position: relative;
 }
 
+.fade-exit {
+  position: absolute;
+  top: 2em;
+  left: calc(50px+2em);
+  margin-right: 2em;
+  opacity: 0;
+}
+
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 750ms ease-in;
 }
