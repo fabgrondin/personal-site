@@ -42,6 +42,10 @@
   margin-top: 1em;
 }
 
+#presentation > p {
+  margin: 2em 0 1em;
+}
+
 #presentation section {
   width: 300px;
   margin-top: 2em;

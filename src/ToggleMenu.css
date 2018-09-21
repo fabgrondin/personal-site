@@ -12,9 +12,19 @@ nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+nav > ul > li {
+  margin: 0.3em 0;
   display: none;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+nav > ul > li > a {
+  color: var(--cyan);
+  text-decoration: none;
 }
 
 nav > ul > li > a:visited {

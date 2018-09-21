@@ -8,7 +8,7 @@ const Resume = () => (
 
       <h1>Fabien Grondin</h1>
       <h2>Développeur web junior</h2>
-
+      <p>35 ans</p>
       <div id="presentation_wrapper">
         <section id="contact">
           <h3>Contact</h3>
@@ -17,7 +17,10 @@ const Resume = () => (
           <br/>
           grondinfbn@gmail.com
           <br/>
-          www.siteperso.com
+          <br/>
+          56 avenue Frédéric Mistral
+          <br/>
+          81000 Albi
           </p>
         </section>
 
@@ -104,7 +107,11 @@ const Resume = () => (
         <h3>Expériences Professionnelles</h3>
         <div>
           <h4>Assistant d&rsquo;éducation</h4>
-          <p className="upper_text">2009 - 2013 | 2015 - 2017</p>
+          <p>
+            2009 - 2013 | 2015 - 2017
+            <br/>
+            J&rsquo;ai su être à l&rsquo;écoute des élèves, m&rsquo;intégrer à l&rsquo;équipe de vie scolaire et communiquer efficacement avec la hiérarchie. J&rsquo;effectuais aussi bénévolement du soutien scolaire en mathématiques.
+          </p>
           <h4>Professeur contractuel de Mathématiques</h4>
           <p className="upper_text">2013 - 2014</p>
         </div>

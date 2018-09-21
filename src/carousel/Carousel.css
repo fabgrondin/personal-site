@@ -6,7 +6,7 @@
 }
 
 .slick-prev::before, .slick-next::before {
-  color: #222;
+  color: var(--cyan);
   font-size: 40px;
 }
 
@@ -34,15 +34,51 @@
   object-fit: contain;
 }
 
+.slide:hover > .legend {
+  opacity: 1;
+}
+
 .legend {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 200px;
   padding: 0.5em;
   box-sizing: border-box;
   background-color: rgba(50,50,50,0.9);
   color: #fff;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+a.eye_link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--cyan);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  background-color: #fff;
+  color: var(--cyan);
+  font-size: 0.7em;
+}
+
+a.eye_link:hover, a.eye_link:visited:hover {
+  border: 3px solid var(--orange);
+  color: var(--orange);
+}
+
+a.eye_link:visited {
+  color: var(--cyan);
+}
+
+a.eye_link > i {
+  display: block;
+  margin: auto;
 }
 
 @media (min-width: 760px) {
