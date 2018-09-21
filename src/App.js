@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Link
+  Switch
 } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -12,7 +11,6 @@ import Resume from './Resume'
 import Welcome from './Welcome'
 import Portfolio from './Portfolio'
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {

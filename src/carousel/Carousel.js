@@ -4,6 +4,9 @@ import Slider from 'react-slick';
 import './Carousel.css'
 
 class Carousel extends Component {
+  componentDidMount() {
+    document.getElementsByClassName("slick-active")[0].focus()
+  }
   render() {
     var settings = {
       dots: true,
@@ -11,7 +14,7 @@ class Carousel extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      lazyLoad: "progressive",
+      lazyLoad: "ondemand"
     };
 
     return (
