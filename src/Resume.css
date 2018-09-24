@@ -119,3 +119,28 @@
 .upper_text {
   text-transform: uppercase;
 }
+
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  #resume {
+    width: calc(100vw - 2cm);
+    height: calc(100vh - 2cm);
+    font-size: 9pt;
+  }
+  #presentation,#profil_wrapper {
+    padding-top: 0;
+  }
+  #presentation {
+    width: 30vw;
+  }
+  #presentation > img {
+    width: 180px;
+    margin: 0 25px;
+    clip-path: circle(90px at 50% 40%);
+  }
+  #profil_wrapper {
+    min-width: 200px;
+  }
+}

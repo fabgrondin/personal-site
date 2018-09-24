@@ -6,6 +6,7 @@ nav {
   font-size: 1.5em;
   text-align: center;
   color: var(--cyan);
+  z-index: 99;
 }
 
 nav > ul {
@@ -37,4 +38,10 @@ nav > ul > li > a.active {
 
 #menu_toggle {
   cursor: pointer;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
 }
