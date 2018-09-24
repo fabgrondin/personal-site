@@ -1,10 +1,11 @@
 nav {
   position: fixed;
-  top: 2rem;
+  top: 10px;
   left: 10px;
   width: 40px;
   font-size: 1.5em;
   text-align: center;
+  background-color: #fff;
   color: var(--cyan);
   z-index: 99;
 }
@@ -13,12 +14,12 @@ nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-height: 0;
+  overflow: hidden;
 }
 
 nav > ul > li {
   margin: 0.3em 0;
-  display: none;
-  opacity: 0;
   transition-property: opacity;
   transition-timing-function: ease-in-out;
 }
@@ -34,6 +35,36 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a.active {
   color: var(--orange);
+}
+
+.spread-enter {
+  max-height: 0;
+}
+
+.spread-enter.spread-enter-active {
+  max-height: 500px;
+  -webkit-transition: max-height 500ms ease-in-out;
+  -o-transition: max-height 500ms ease-in-out;
+  transition: max-height 500ms ease-in-out;
+}
+
+.spread-enter-done {
+  max-height: 500px;
+}
+
+.spread-exit {
+  max-height: 500px;
+}
+
+.spread-exit.spread-exit-active {
+  max-height: 0;
+  -webkit-transition: max-height 500ms ease-in-out;
+  -o-transition: max-height 500ms ease-in-out;
+  transition: max-height 500ms ease-in-out;
+}
+
+.spread-exit-done {
+  max-height: 0;
 }
 
 #menu_toggle {
