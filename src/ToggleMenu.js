@@ -17,17 +17,17 @@ render() {
         <CSSTransition in={this.state.visible} classNames="spread" timeout={500}>
             <ul>
               <li>
-                <NavLink exact to="/" title="Accueil">
+                <NavLink exact to="/" title="Accueil" onClick={this.toggleMenu}>
                   <i className="fas fa-home"></i>
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/resume" title="Curriculum Vitae">
+                <NavLink exact to="/resume" title="Curriculum Vitae" onClick={this.toggleMenu}>
                   <i className="fas fa-file"></i>
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/portfolio" title="Portfolio">
+                <NavLink exact to="/portfolio" title="Portfolio" onClick={this.toggleMenu}>
                   <i className="fas fa-images"></i>
                 </NavLink>
               </li>
