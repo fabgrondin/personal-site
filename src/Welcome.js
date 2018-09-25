@@ -15,10 +15,18 @@ class Welcome extends Component {
         <h1>
           Fabien Grondin
           <br/>
-          <span className="subtitle">Développeur Web Junior</span>
+          <span className="subtitle">
+            Développeur Web Junior
+            <br/>
+            Autonome, rigoureux et curieux
+          </span>
         </h1>
         <p>
-          Jeune diplômé dans le développement web, je suis passionné, curieux et très motivé pour me perfectionner. J&rsquo;ai un esprit rigoureux et analytique et je sais faire preuve d&rsquo;autonomie dans l&rsquo;apprentissage comme dans le travail.
+        Ce site a pour but de présenter mes compétences et mon travail.
+        <br/>
+        Il a été réalisé sous React.js.
+        <br/>
+        Cliquez sur le menu en haut à gauche pour accéder à mon CV en ligne et à mon portfolio.
         </p>
       </section>
       <section id="github_activity" ref={el => (this.instance = el)}>

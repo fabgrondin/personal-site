@@ -4,10 +4,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 #welcome_text {
   width: 100%;
+  background: -webkit-linear-gradient(#ffffff 0%, #f4f4f4 100%);
+  background: -o-linear-gradient(#ffffff 0%, #f4f4f4 100%);
+  background: linear-gradient(#ffffff 0%, #f4f4f4 100%); /* W3C */
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #welcome_text > h1 {
@@ -16,19 +23,20 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--orange);
-  background-color: #F2F2F2;
-  border: 2px solid #F2F2F2;
-  border-radius: 10px;
   margin-top: 0;
   margin-bottom: 0.5rem;
+  line-height: 1em;
+  padding: 0.5em;
 }
 
 #welcome_text > h1 > span.subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #welcome_text > p {
-  padding: 0 1em;
+  padding: 0 0.5em;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 #github_activity {
@@ -39,6 +47,9 @@
 @media screen and (min-width: 768px) {
   #welcome_text {
     width: 80%;
+  }
+  #welcome_text > p {
+    padding: 0 3em;
   }
   #github_activity {
     width: 80%;

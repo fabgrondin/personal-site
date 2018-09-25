@@ -4,15 +4,15 @@
 }
 
 .main {
-  padding: 40px 2rem;
+  padding: 60px 2rem 0;
   position: relative;
 }
 
 .fade-enter {
   position: absolute;
-  top: 2em;
-  left: 2em;
-  margin-right: 2em;
+  top: 60px;
+  left: 2rem;
+  margin-right: 2rem;
   opacity: 0;
 }
 
@@ -23,13 +23,14 @@
 
 .fade-enter-done {
   position: relative;
+  margin: auto;
 }
 
 .fade-exit {
   position: absolute;
-  top: 2em;
-  left: 2em;
-  margin-right: 2em;
+  top: 60px;
+  left: 2rem;
+  margin-right: 2rem;
   opacity: 0;
 }
 
