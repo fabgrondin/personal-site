@@ -4,21 +4,19 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-}
-
-#presentation,#profil_wrapper {
-  padding: 2em;
+  justify-content: center;
 }
 
 #presentation {
-  width: 300px;
-  padding-top: 80px;
+  width: 100%;
+  max-width: 300px;
+  padding-top: 0;
 }
 
 #presentation > img {
-  width: 250px;
-  margin: 0 25px;
-  clip-path: circle(125px at 50% 40%);
+  width: 150px;
+  margin: 0 calc(50% - 75px);
+  clip-path: circle(75px at 50% 40%);
 }
 
 #presentation > h1 {
@@ -47,7 +45,6 @@
 }
 
 #presentation section {
-  width: 300px;
   margin-top: 2em;
 }
 
@@ -86,7 +83,7 @@
 }
 
 #profil_wrapper {
-  min-width: 400px;
+  width: 100%;
   flex: 1 1;
   background-color: var(--cyan);
 }
@@ -99,7 +96,6 @@
   margin: 0;
   padding: 1em;
   letter-spacing: 0.1em;
-  text-align: justify;
 }
 
 #profil_wrapper > section > div{
@@ -118,6 +114,38 @@
 
 .upper_text {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  #presentation,#profil_wrapper {
+    padding: 2em;
+  }
+
+  #presentation {
+    width: 300px;
+    padding-top: 80px;
+  }
+
+  #presentation > img {
+    width: 250px;
+    margin: 0 25px;
+    clip-path: circle(125px at 50% 40%);
+  }
+
+  #presentation section {
+    width: 300px;
+    margin-top: 2em;
+  }
+
+  #profil_wrapper {
+    min-width: 400px;
+    flex: 1 1;
+    background-color: var(--cyan);
+  }
+
+  #profil > p, #hobbies > p {
+    text-align: justify;
+  }
 }
 
 @media print {
