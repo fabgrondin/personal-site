@@ -63,7 +63,7 @@ class Carousel extends Component {
                 <li>JavaScript développé en Orienté Objet</li>
                 <li>La carte est récupérée dynamiquement depuis l&rsquo;API Google Maps</li>
                 <li>Les informations des stations utilisent l&rsquo;API Live de JC Decaux</li>
-                <li>Les informations de réservations utilisent l’API SessionStorage</li>
+                <li>Les informations de réservations utilisent l’API Web Storage</li>
               </ul>
             </p>
             <a href="http://ocrveloloc.000webhostapp.com/" className="eye_link"><i className="fas fa-eye fa-2x"></i></a>

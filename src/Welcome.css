@@ -13,7 +13,6 @@
   background: -o-linear-gradient(#ffffff 0%, #f4f4f4 100%);
   background: linear-gradient(#ffffff 0%, #f4f4f4 100%); /* W3C */
   border: 2px solid #f4f4f4;
-  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -59,7 +58,7 @@
 
 @media screen and (min-width: 1200px) {
   #welcome {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   #welcome_text {
     width: 60%;

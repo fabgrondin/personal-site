@@ -1,4 +1,5 @@
 #resume {
+  margin: auto;
   max-width: 1200px;
   display: -webkit-flex;
   display: -ms-flex;
