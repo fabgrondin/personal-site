@@ -19,10 +19,10 @@ class App extends Component {
       <Router>
         <Route render={({location}) => (
           <div className="App">
-            <ToggleMenu />
-            <div className="main">
+          <ToggleMenu />
+          <div className="main">
               <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={750}>
+                <CSSTransition key={location.key} classNames="fade" timeout={500}>
                   <Switch location={location}>
                     <Route exact path="/" component={Welcome} />
                     <Route exact path="/resume" component={Resume} />
@@ -31,8 +31,8 @@ class App extends Component {
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
+              </div>
             </div>
-          </div>
         )}/>
       </Router>
     );
